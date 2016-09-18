@@ -36,7 +36,10 @@ body {
 .beareditor-toolbar a {
   position: relative;
   display: block;
+  width: 36px;
+  height: 30px;
   padding: 0 10px;
+  box-sizing: border-box;
   line-height: 30px;
   text-decoration: none;
   color: #333;
@@ -49,7 +52,6 @@ body {
 .beareditor-area {
   position: relative;
   width: 100%;
-  height: calc(100% - 31px);
 }
 
 .beareditor-codearea,
@@ -64,6 +66,10 @@ body {
   resize: none;
   font-size: 16px;
   overflow-y: auto;
+}
+
+.beareditor-textarea p {
+  min-height: 1px;
 }
 
 .beareditor-submenu {
@@ -82,8 +88,7 @@ body {
 
 .beareditor-submenu a {
   display: block;
-  padding: 0 10px;
-  line-height: 20px;
+  padding: 4px 10px;
   text-decoration: none;
   color: #333;
 }
